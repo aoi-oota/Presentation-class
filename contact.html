@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせ|KUZIRA CAFE</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id="top">
+        <!-- ヘッダー -->
+        <header class="header">
+            <div class="logoin">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="dummy! ^^"></a>
+                </div>
+                <div class="login">
+                    <a href="access.html">ログイン/マイページ</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="index.html#news">お知らせ</a></li>
+                    <li><a href="index.html#about">会社概要</a></li>
+                    <li><a href="plan.html">プラン一覧</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ヘッダーここまで -->
+        <h1 class="hero contact">お問い合わせ</h1>
+        <!-- メイン -->
+        <main>
+            <a href="apply.html">お申込みはこちら</a>
+            <form action="about.html">
+                <p>
+                    <label for="kind">お問い合わせの種類</label><br>
+                    <select name="kind" id="kind">
+                        <option value="1">会社に関するお問い合わせ</option>
+                        <option value="2">プランに関するお問い合わせ</option>
+                        <option value="3">その他</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">お問い合わせ内容</label><br>
+                    <textarea name="message" id="message"></textarea>
+                </p>
+                <p class="submit">
+                    <input type="submit" value="送信">
+                </p>
+            </form>
+        </main>
+        <!-- メインここまで -->
+        <!-- フッター -->
+        <footer>
+            <div class="gotop">
+                <a href="#top"><img src="images/gotop.svg" alt="ページトップへ戻る"></a>
+            </div>
+            <div class="cp-nav">
+                <p class="copyright">&copy; GameAdly</p>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="index.html#news">お知らせ</a></li>
+                    <li><a href="index.html#about">会社概要</a></li>
+                    <li><a href="plan.html">プラン一覧</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- フッターここまで -->
+    </body>
+</html>
