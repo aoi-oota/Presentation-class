@@ -1,0 +1,257 @@
+/*全てのページに適用される設定*/
+html{
+    font-size: 16xp;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 0 0 0;
+}
+p,li,td{
+    line-height: 1.7;
+}
+a:link{
+    color: #F07D34;
+    text-decoration: none;
+}
+a:visited{
+    color: #F07D34;
+    text-decoration: none;
+}
+a:hover{
+    color: #F07D34;
+    text-decoration: underline;
+}
+a:active{
+    color: #F07D34;
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+}
+/*全てのページに設定 - ヘッダー*/
+.header{
+    padding-top: 40px;
+}
+.logo{
+    text-align: left;
+    padding-left: 40px;
+}
+.login{
+    text-align: right;
+    padding-right: 40px;
+}
+.login a:link{
+    color: #000000;
+}
+.login a:visited{
+    color: #000000;
+}
+.login a:hover{
+    text-decoration: none;
+}
+.login a:active{
+    text-decoration: none;
+}
+.nav ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.nav a:link{
+    color: #000000;
+}
+.nav a:visited{
+    color: #000000;
+}
+.nav a:hover{
+    text-decoration: none;
+}
+.nav a:active{
+    text-decoration: none;
+}
+/*全てのページに設定 - ヒーロー*/
+.hero{
+    padding: 137px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+}
+.hero.index{
+    text-align: left;
+    padding: 287px 200px;
+    background-image: url(../images/home-hero.png);
+}
+.hero.access{
+    background-image: url(../images/access-hero.jpg);
+}
+.hero.plan{
+    background-image: url(../images/plan-hero.jpg);
+}
+.hero.contact{
+    background-image: url(../images/contact-hero.jpg);
+}
+.hero.about{
+    background-image: url(../images/about-hero.png);
+}
+/*全てのページに設定 - メイン*/
+main{
+    margin: 90px auto 90px auto;
+    max-width: 1000px;
+}
+main h2{
+    margin: 60px 0 20px 0;
+    border-bottom: 2px solid #000000;
+    padding: 0 0 20px 0;
+    color: #000000;
+    font-size: 1.3rem;  /*1.3rem->1.6px*/
+}
+/*全てのページに設定 - フッター*/
+.gotop{
+    text-align: center;
+}
+.cp-nav{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
+.cp-nav ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.cp-nav a:link{
+    color: #FFFFFF;
+}
+.cp-nav a:visited{
+    color: #FFFFFF;
+}
+.cp-nav a:hover{
+    text-decoration: none;
+}
+.cp-nav a:active{
+    text-decoration: none;
+}
+/*個別のスタイル*/
+/*index.html*/
+.com-logo{
+    text-align: center;
+}
+.service{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/*.shop-info{
+    border-collapse: collapse;
+}
+.shop-info th, .shop-info td{
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+}
+.shop-info th{
+    width: 112px;
+    text-align: left;
+    vertical-align: top;
+}*/
+/*plan.html*/
+.plans{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.plan-list ul{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.plan-list a:link{
+    color: #000000;
+}
+.plan-list a:visited{
+    color: #000000;
+}
+.plan-list a:hover{
+    text-decoration: none;
+}
+.plan-list a:active{
+    text-decoration: none;
+}
+.plan-img{
+    border-bottom: 2px solid #000000;
+}
+.plan p{
+    font-size: 18px;
+}
+/*contact.html*/
+form{
+    margin: 0 auto;
+    max-width: 640px;
+}
+input[type="text"],textarea{
+    padding: 6px;
+    width: 100%;
+    font-size: 1rem;
+}
+textarea{
+    height: 140px;
+}
+.submit{
+    text-align: center;
+}
+input[type="submit"]{
+    border: none;
+    padding: 20px;
+    width: 200px;
+    background-color: #253958;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+/*plan.html*/
+.about{
+    border-collapse: collapse;
+}
+.about th, .about td{
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    padding: 20px;
+}
+.about th{
+    width: 150px;
+    text-align: left;
+    vertical-align: top;
+}
+/*モバイル対応*/
+@media(max-width: 767px){
+    .nav ul{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    main{
+        padding: 0 4%;
+    }
+    /*index.html*/
+    .hero.index{
+        padding: 28vh 0;
+    }
+    /*menu.html*/
+    .plans{
+        grid-template-columns: 1fr 1fr;
+    }
+}
