@@ -6,4 +6,4 @@ mainにフォルダを作成したのでそこに追加してください、変�
 github/workflowsは触らないでください。
 
 ## プレビュー
-<https://aoi-oota.github.io/Presentation-class/index.html>
+<[https://aoi-oota.github.io/Presentation-class/index.html](https://aoi-oota.github.io/Presentation-class/)>
