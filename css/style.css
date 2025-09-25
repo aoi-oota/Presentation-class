@@ -34,7 +34,9 @@ img{
 /*全てのページに設定 - ヘッダー*/
 .header{
     padding-top: 40px;
-    background-color: #65BBE9;
+    background-color: #eaf4fc;
+    position: sticky;
+    top: 0;
 }
 .logo{
     text-align: left;
@@ -58,7 +60,7 @@ img{
 }
 .nav ul{
     margin: 30px 0 0 0;
-    padding: 0;
+    padding: 0 0 15px 0;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -84,9 +86,10 @@ img{
     background-size: cover;
     color: #000000;
     text-align: center;
+    margin: 0 0 21.44px;
 }
 .hero.index{
-    text-align: left;
+    text-align: center;
     padding: 287px 200px;
     background-image: url(../images/home-hero.png);
 }
@@ -105,14 +108,22 @@ img{
 /*全てのページに設定 - メイン*/
 main{
     margin: 90px auto 90px auto;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 main h2{
     margin: 60px 0 20px 0;
     border-bottom: 2px solid #000000;
     padding: 0 0 20px 0;
     color: #000000;
-    font-size: 1.3rem;  /*1.3rem->1.6px*/
+    font-size: 1.3rem;
+}
+.top-about{
+    font-size: 20px;
+}
+.button{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
 }
 /*全てのページに設定 - フッター*/
 .gotop{
@@ -208,7 +219,7 @@ main h2{
 }
 .plan-img{
     border-bottom: 2px solid #000000;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .plan p{
     font-size: 18px;
@@ -252,7 +263,7 @@ input[type="submit"]{
     vertical-align: top;
 }
 /*モバイル対応*/
-@media(max-width: 767px){
+/*@media(max-width: 767px){
     .nav ul{
         flex-wrap: wrap;
         gap: 20px;
@@ -260,12 +271,10 @@ input[type="submit"]{
     main{
         padding: 0 4%;
     }
-    /*index.html*/
     .hero.index{
         padding: 28vh 0;
     }
-    /*menu.html*/
     .plans{
         grid-template-columns: 1fr 1fr;
     }
-}
+}*/
